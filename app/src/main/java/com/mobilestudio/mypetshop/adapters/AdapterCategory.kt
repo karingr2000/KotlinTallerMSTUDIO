@@ -26,7 +26,7 @@ class AdapterCategory(
         holder.bindView(data = dataSource[position])
     }
 
-    override fun getItemCount(): Int = 0
+    override fun getItemCount(): Int = dataSource.size
 
     class ViewHolder(private val itemCategory: ItemCategoryBinding) :
         RecyclerView.ViewHolder(itemCategory.root) {
