@@ -1,2 +1,4 @@
+include ':repository'
+include ':localstorage'
 include ':app'
 rootProject.name = "MyPetShop"

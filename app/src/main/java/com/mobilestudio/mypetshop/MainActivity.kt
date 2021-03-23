@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.mobilestudio.mypetshop.databinding.ActivityMainBinding
+import com.mobilestudio.mypetshop.store.StoreActivity
 
 class MainActivity : AppCompatActivity() {
 
