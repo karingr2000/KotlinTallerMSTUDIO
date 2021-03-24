@@ -28,18 +28,18 @@ class DetailProductActivity : AppCompatActivity() {
 
         setUpUI()
         setUpActions()
-        setUpObservables()
+       // setUpObservables()
 
     }
 
-    private fun setUpObservables() {
-        viewModel.quantity.observe(this) { quantity ->
-            Log.e("Quantity", "---> $quantity")
-            quantity?.let {
-                setQuantityProduct(it)
-            }
-        }
-    }
+ //   private fun setUpObservables() {
+//        viewModel.quantity.observe(this) { quantity ->
+//            Log.e("Quantity", "---> $quantity")
+//            quantity?.let {
+//                setQuantityProduct(it)
+//            }
+//        }
+//    }
 
     private fun setUpActions() {
         binding.btnAddQuantity.setOnClickListener {

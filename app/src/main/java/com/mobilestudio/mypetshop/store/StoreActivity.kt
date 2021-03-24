@@ -30,7 +30,7 @@ class StoreActivity : AppCompatActivity() {
 
         setUpUI()
         setUpActions()
-        setUpObservables()
+        //setUpObservables()
 
     }
 
@@ -55,14 +55,14 @@ class StoreActivity : AppCompatActivity() {
         }
     }
 
-    private fun setUpObservables() {
-        //viewmodel observers
-        viewModel.listProducts.observe(this) { listProducts ->
-            listProducts?.forEach {
-                Log.i("PRODUCT", it.name)
-            }
-        }
-    }
+//    private fun setUpObservables() {
+ //       //viewmodel observers
+ //       viewModel.listProducts.observe(this) { listProducts ->
+ //           listProducts?.forEach {
+ //               Log.i("PRODUCT", it.name)
+ //           }
+ //       }
+ //   }
 
 
     private fun getCategoryProducts(): List<String> {
